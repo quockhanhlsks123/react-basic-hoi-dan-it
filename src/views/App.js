@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.scss';
 import MyComponents from './example/MyComponents';
+import ListTodo from './example/Todos/ListTodos';
+
 
 function App() {
   return (
@@ -8,7 +10,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          hello world with reactjs
+          Simple Todo Apps with ReactJS
         </p>
         <a
           className="App-link"
@@ -17,7 +19,7 @@ function App() {
           rel="noopener noreferrer"
         >
         </a>
-        <MyComponents />
+        <ListTodo />
       </header>
 
     </div>
