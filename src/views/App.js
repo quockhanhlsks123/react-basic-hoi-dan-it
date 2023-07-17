@@ -2,6 +2,8 @@ import logo from './logo.svg';
 import './App.scss';
 import MyComponents from './example/MyComponents';
 import ListTodo from './example/Todos/ListTodos';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 function App() {
@@ -21,6 +23,21 @@ function App() {
         </a>
         <ListTodo />
       </header>
+
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
+      {/* Same as */}
+      <ToastContainer />
 
     </div>
   );
